@@ -5,23 +5,31 @@ const Semaforo = () => {
   const red = ["🔴  ⚫️  ⚫️"];
   const yellow = ["⚫️  🟡  ⚫️"];
   const green = ["⚫️  ⚫️  🟢"];
+  const purple = ["⚫️  ⚫️  🟣"];
 
   const [semaforo, setSemaforo] = useState(black);
 
+  const getBlack = () => {
+    setSemaforo(black)
+  }
 
+  const GetPurple = () => {
+    setSemaforo(purple);
+    setTimeout(getBlack, 4000);
+  }
 
   const GetGreen = () => {
     setSemaforo(green);
-    setInterval(GetRed, 2000);
+    setTimeout(getBlack, 2000);
   };
 
   const GetYellow = () => {
     setSemaforo(yellow);
-    setInterval(GetGreen, 2000);
+    setTimeout(GetGreen, 2000);
   };
   const GetRed = () => {
     setSemaforo(red);
-    setInterval(GetYellow, 2000);
+    setTimeout(GetYellow, 2000);
   };
   return (
     <>
@@ -38,16 +46,27 @@ const Semaforo = () => {
               </div>
             </div>
           </div>
-          <div className="col-12">
+          <div className="col-12 ">
             <button
               type="button"
-              class="btn btn-dark position-absolute"
+              class="btn btn-dark position-absolute primerBoton"
               onClick={() => {
                 GetRed();
               }}
             >
               Play!
             </button>
+            <div className="col-12 ">
+              <button
+                type="button"
+                class="btn btn-dark position-absolute segundoBoton"
+                onClick={() => {
+                  GetPurple();
+                }}
+              >
+                Extra!
+              </button>
+            </div>
           </div>
         </div>
       </div>

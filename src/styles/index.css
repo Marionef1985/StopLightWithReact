@@ -1,36 +1,39 @@
 .semaforo {
    
     position: absolute;
-    top: 30px;
-    right: 615px;
+    top: 4%;
+    right: 42%;
     font-size: 75px;
     
 }
 
 .rectangle {
     z-index: -100;
-    top: 35px;
-    right: 590px;
+    top: 5%;
+    right: 40.5%;
     width: 300px;
     height: 100px;
     background-color: rgb(255, 208, 0);
  }
 
  .stick {
-    top: 70px;
-    right: 0px;
+    top: 10%;
+    right: 0%;
     width: 600px;
     height: 30px;
     background-color: rgb(255, 208, 0);
  }
 
 
- .btn {
+ .primerBoton {
 
-    top: 160px;
-    right: 48.5%;
+    top: 23%;
+    right: 49.7%;
  }
-
+ .segundoBoton {
+    top:30%;
+    right: 49.5%;
+ }
  
 /* 
 
