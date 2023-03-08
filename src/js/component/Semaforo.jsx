@@ -10,18 +10,18 @@ const Semaforo = () => {
 
 
 
-  const afterYellow = () => {
+  const GetGreen = () => {
     setSemaforo(green);
-    setInterval(afterStart, 2000);
+    setInterval(GetRed, 2000);
   };
 
-  const afterRed = () => {
+  const GetYellow = () => {
     setSemaforo(yellow);
-    setInterval(afterYellow, 2000);
+    setInterval(GetGreen, 2000);
   };
-  const afterStart = () => {
+  const GetRed = () => {
     setSemaforo(red);
-    setInterval(afterRed, 2000);
+    setInterval(GetYellow, 2000);
   };
   return (
     <>
@@ -43,7 +43,7 @@ const Semaforo = () => {
               type="button"
               class="btn btn-dark position-absolute"
               onClick={() => {
-                afterStart();
+                GetRed();
               }}
             >
               Play!
