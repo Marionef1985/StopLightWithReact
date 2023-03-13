@@ -2,8 +2,8 @@
    
     position: absolute;
     top: 4%;
-    right: 42%;
-    font-size: 480%;
+    right: 41.5%;
+    font-size:5.5vw;
     
 }
 
@@ -19,7 +19,7 @@
  .stick {
     top: 10%;
     right: 0%;
-    width: 42%;
+    width: 41.5%;
     height: 4%;
     background-color: rgb(255, 208, 0);
  }

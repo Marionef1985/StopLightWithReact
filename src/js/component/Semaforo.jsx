@@ -20,7 +20,7 @@ const Semaforo = () => {
 
   const GetGreen = () => {
     setSemaforo(green);
-    setTimeout(getBlack, 2000);
+    setTimeout(GetRed, 2000);
   };
 
   const GetYellow = () => {
